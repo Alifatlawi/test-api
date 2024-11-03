@@ -11,6 +11,10 @@ let users = [
     { id: 2, name: 'Jane Smith', email: 'jane@example.com' }
 ];
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 // GET all users
 app.get('/api/users', (req, res) => {
     res.json(users);
